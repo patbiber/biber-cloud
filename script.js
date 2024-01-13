@@ -1,8 +1,11 @@
-// Example: Click on a beaver to display information
-document.querySelectorAll('.beaver').forEach(beaver => {
-    beaver.addEventListener('click', function() {
-        // Display information or trigger an animation
-    });
-});
+const frames = [
+    `     /|_/|\n    / o o \\\n   (   "   )\n    \\~(*)~/\n     \`~*~\``,
+    `     /|_/|\n    / @ @ \\\n   (   "   )\n    \\~(*)~/\n     \`~*~\``
+];
 
-// Additional JavaScript for interactive elements
+let currentFrame = 0;
+
+setInterval(() => {
+    document.getElementById("asciiBeaver").innerText = frames[currentFrame];
+    currentFrame = (currentFrame + 1) % frames.length;
+}, 500); // Change frame every 500ms
