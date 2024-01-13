@@ -14,3 +14,24 @@ body, html {
 }
 
 /* Additional styles for beavers and machine */
+
+.beaver {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    position: absolute;
+    background-image: url('beaver.png'); /* Replace with actual image */
+    animation: beaverMovement 5s infinite;
+}
+
+@keyframes beaverMovement {
+    /* Define beaver movement animations */
+}
+
+#machine {
+    width: 300px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    position: absolute;
+    background-image: url('machine.png'); /* Replace with actual image */
+    /* Additional machine styling */
+}
+
