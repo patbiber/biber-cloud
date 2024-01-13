@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated ASCII Beaver</title>
+    <title>ASCII Beaver Blink</title>
     <style>
         #asciiBeaver {
             font-family: "Courier New", monospace;
@@ -14,27 +14,24 @@
     </style>
 </head>
 <body>
-    <div id="asciiBeaver">
-         /|_/|<br>
-        / o o \<br>
-       (   "   )<br>
-        \~(*)~/<br>
-         `~*~`
-    </div>
+<h1>biber.cloud</h1>
+<br>
+
+
+    <div id="asciiBeaver"></div>
 
     <script>
         const frames = [
-            `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/|_/|<br>&nbsp;&nbsp;&nbsp;/ o o \\ <br>&nbsp;&nbsp;( &nbsp;&nbsp;" &nbsp;&nbsp;&nbsp;)<br>&nbsp;&nbsp;&nbsp;\\~(*)~/<br>&nbsp;&nbsp;&nbsp;&nbsp;` + "`~*~`",
-            `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/|_/|<br>&nbsp;&nbsp;&nbsp;/ @ @ \\ <br>&nbsp;&nbsp;( &nbsp;&nbsp;" &nbsp;&nbsp;&nbsp;)<br>&nbsp;&nbsp;&nbsp;\\~(*)~/<br>&nbsp;&nbsp;&nbsp;&nbsp;` + "`~*~`"
+            `                   .---.\n                  @ @   )\n                  ^     |\n                 [|]    | ##\n                 /      |####\n                (       |####\n                 \| /   |#BP#\n                / |.'   |###\n               _\ \`\\   )##\n              /,,_/,,____#  `,
+            `                   .---.\n                  - -   )\n                  ^     |\n                 [|]    | ##\n                 /      |####\n                (       |####\n                 \| /   |#BP#\n                / |.'   |###\n               _\ \`\\   )##\n              /,,_/,,____#  `
         ];
-    
+
         let currentFrame = 0;
-    
+
         setInterval(() => {
-            document.getElementById("asciiBeaver").innerHTML = frames[currentFrame];
+            document.getElementById("asciiBeaver").innerText = frames[currentFrame];
             currentFrame = (currentFrame + 1) % frames.length;
-        }, 500); // Change frame every 500ms
+        }, 500); // Change frame every 500ms for blinking effect
     </script>
-    
 </body>
 </html>
