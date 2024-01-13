@@ -24,16 +24,17 @@
 
     <script>
         const frames = [
-            `     /|_/|\\n    / o o \\\\n   (   "   )\\n    \\~(*)~/\\n     \`~*~\``,
-            `     /|_/|\\n    / @ @ \\\\n   (   "   )\\n    \\~(*)~/\\n     \`~*~\``
+            `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/|_/|<br>&nbsp;&nbsp;&nbsp;/ o o \\ <br>&nbsp;&nbsp;( &nbsp;&nbsp;" &nbsp;&nbsp;&nbsp;)<br>&nbsp;&nbsp;&nbsp;\\~(*)~/<br>&nbsp;&nbsp;&nbsp;&nbsp;` + "`~*~`",
+            `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/|_/|<br>&nbsp;&nbsp;&nbsp;/ @ @ \\ <br>&nbsp;&nbsp;( &nbsp;&nbsp;" &nbsp;&nbsp;&nbsp;)<br>&nbsp;&nbsp;&nbsp;\\~(*)~/<br>&nbsp;&nbsp;&nbsp;&nbsp;` + "`~*~`"
         ];
-
+    
         let currentFrame = 0;
-
+    
         setInterval(() => {
-            document.getElementById("asciiBeaver").innerText = frames[currentFrame];
+            document.getElementById("asciiBeaver").innerHTML = frames[currentFrame];
             currentFrame = (currentFrame + 1) % frames.length;
         }, 500); // Change frame every 500ms
     </script>
+    
 </body>
 </html>
