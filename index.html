@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,8 +24,11 @@
 
 
     <div id="asciiBeaver"></div>
+    <img id="ufo" src="ufo.png" alt="UFO"> <!-- Add your UFO image path here -->
+
 
     <script>
+        // JavaScript for beaver
         const frames = [
             `                   .---.\n                  @ @   )\n                  ^     |\n                 [|]    | ##\n                 /      |####\n                (       |####\n                 \| /   |#BP#\n                / |.'   |###\n               _\ \`\\   )##\n              /,,_/,,____#  `,
             `                   .---.\n                  - -   )\n                  ^     |\n                 [|]    | ##\n                 /      |####\n                (       |####\n                 \| /   |#BP#\n                / |.'   |###\n               _\ \`\\   )##\n              /,,_/,,____#  `
@@ -37,6 +40,18 @@
             document.getElementById("asciiBeaver").innerText = frames[currentFrame];
             currentFrame = (currentFrame + 1) % frames.length;
         }, 500); // Change frame every 500ms for blinking effect
+        
+        // JavaScript for UFO animation
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const ufo = document.getElementById('ufo');
+                ufo.style.bottom = '90vh'; // Move to upper right
+                ufo.style.left = '90vw'; // Move to upper right
+                ufo.style.opacity = 1; // Make UFO visible
+            }, 2000); // Start animation 2 seconds after page load
+        });
+
+
     </script>
 </body>
 </html>
