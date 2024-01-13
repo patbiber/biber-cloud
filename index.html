@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beavers' Big Purchase</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Animated ASCII Beaver</title>
+    <style>
+        #asciiBeaver {
+            font-family: "Courier New", monospace;
+            white-space: pre;
+            font-size: 14px;
+            line-height: 14px;
+        }
+    </style>
 </head>
 <body>
     <div id="asciiBeaver">
-        /|_/|<br>
-       / o o \<br>
-      (   "   )<br>
-       \~(*)~/<br>
-        `~*~`
-   </div>   
-    <script src="script.js"></script>
+         /|_/|<br>
+        / o o \<br>
+       (   "   )<br>
+        \~(*)~/<br>
+         `~*~`
+    </div>
+
+    <script>
+        const frames = [
+            `     /|_/|\\n    / o o \\\\n   (   "   )\\n    \\~(*)~/\\n     \`~*~\``,
+            `     /|_/|\\n    / @ @ \\\\n   (   "   )\\n    \\~(*)~/\\n     \`~*~\``
+        ];
+
+        let currentFrame = 0;
+
+        setInterval(() => {
+            document.getElementById("asciiBeaver").innerText = frames[currentFrame];
+            currentFrame = (currentFrame + 1) % frames.length;
+        }, 500); // Change frame every 500ms
+    </script>
 </body>
 </html>
