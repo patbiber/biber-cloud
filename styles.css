@@ -1,0 +1,63 @@
+/* styles.css */
+
+/* Google Material Design Farben */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #4285f4;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.services, .about, .contact {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.services ul, .about p, .contact p {
+    margin: 0;
+    padding: 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
