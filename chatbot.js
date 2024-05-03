@@ -26,4 +26,6 @@ function displayResponse(message) {
     responseDiv.appendChild(newMessage);
 }
 
-document.getElementById("send-button").addEventListener("click", sendMessage);
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("send-button").addEventListener("click", sendMessage);
+});
