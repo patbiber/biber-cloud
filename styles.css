@@ -2,7 +2,9 @@
 
 /* Google Material Design Farben */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Google Sans", "Open Sans", Arial, sans-serif;
+    line-height: 150%;
+    font-size: 1.3em;
     background-color: #f5f5f5;
     color: #333;
     margin: 0;
