@@ -1,17 +1,4 @@
 <!DOCTYPE html>
-<!-- Biber Network IT provides infrastructure support for small companies and consultants in Switzerland.
-As example:
-        -Ubuntu and Debian Linux setup and administration in Cloud or on any device.
-        -Google Workspace setup.
-        -Wifi Setup with unifi.
-        -DNS setup the right MX, SPF, DKIM, A records etc,
-        -Simple website configuration, for example, directly on Github with no server costs.
-        -Google Adwords configuration.
-        -Support on any interesting IT Task but including toil work if needed.
-        -Hardware installation, patching generally.
-        -free accompaniment to aperitifs and events.
-Contact me at patrick@biber.cloud or call me 0041786625921
-        -->
 <html>
 <head>
     <meta charset="UTF-8">
@@ -47,11 +34,43 @@ Contact me at patrick@biber.cloud or call me 0041786625921
                 opacity: 1;
             }
         }
+        .blinking-banner {
+            padding: 20px 40px;
+            border: 2px solid #ffcc00;
+            text-align: center;
+            font-size: 24px;
+            background-color: #333;
+            color: #ffcc00;
+            text-transform: uppercase;
+            animation: blink 1.5s infinite;
+            text-decoration: none;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .blinking-banner:hover {
+            background-color: #ffcc00;
+            color: #000;
+            border-color: #fff;
+        }
     </style>
 </head>
 <body>
-<br>
-<br>
+    <br>
+    <br>
+    <a href="https://network-it.ch" class="blinking-banner">
+        Check out Biber Network for First-Class IT Services for All
+    </a>
 
 
     <div id="asciiBeaver"></div>
