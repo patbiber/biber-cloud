@@ -26,25 +26,7 @@
             line-height: 14px;
             font-weight: bold;
             color: green;
-        }
-        #ufo {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            transition: all 4s ease-in-out; /* Smooth transition for the movement */
-        }
-        @keyframes ufoMove {
-            from {
-                bottom: 0;
-                left: 0;
-                opacity: 0;
-            }
-            to {
-                bottom: 100%;
-                left: 100%;
-                opacity: 1;
-            }
-        }
+        }        
         .logo {
         float: right;
         }
@@ -64,23 +46,6 @@
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
 
-        .cta {
-            font-size: 24px;
-            color: #ffcc00;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 10px 20px;
-            border: 2px solid #ffcc00;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .cta:hover {
-            background-color: #ffcc00;
-            color: #000;
-        }
-
-        /* Media query for mobile devices */
         @media only screen and (max-width: 600px) {
             .logo {
                 float: right;
@@ -96,53 +61,50 @@
 </head>
 <body>
     <div id="centerContainer">
+        <div class="logo"><img src="tree.png" alt="Biber Network IT Logo"/></div>
 
-    <div class="logo"><img src="tree.png" alt="Biber Network IT Logo"/></div>
+        <h1 class="cool-title">Biber Cloud<h1>
+        <h2>Empowering developers with seamless, cost-effective infrastructure solutions, driven by simplicity, open communication, and a network of top-tier cloud engineers.</h2>
+        <p>At Biber Cloud, we bring your vision to life by providing world-class infrastructure services tailored to make your applications accessible on the web. From robust server infrastructure to comprehensive CI/CD pipelines, we have the expertise and network to ensure your applications are always online and performing at their best.</p>
+        <p>Founded by an experienced infrastructure engineer with a proven track record in managing large-scale cloud solutions, Biber Cloud is powered by a team of the most talented infrastructure cloud engineers in the industry. Our mission is simple: to empower every developer with the infrastructure they need to succeed, no matter the scale or complexity of their vision.</p>
+        <p>Whether you're a startup looking to launch your first application or an established company aiming to optimize your existing infrastructure, Biber Cloud is your trusted partner in bringing your digital dreams to life.</p>
 
-    <h1 class="cool-title">Biber Cloud<h1>
-    <h2>Empowering developers with seamless, cost-effective infrastructure solutions, driven by simplicity, open communication, and a network of top-tier cloud engineers.</h2>
-    <p>At Biber Cloud, we bring your vision to life by providing world-class infrastructure services tailored to make your applications accessible on the web. From robust server infrastructure to comprehensive CI/CD pipelines, we have the expertise and network to ensure your applications are always online and performing at their best.</p>
-    <p>Founded by an experienced infrastructure engineer with a proven track record in managing large-scale cloud solutions, Biber Cloud is powered by a team of the most talented infrastructure cloud engineers in the industry. Our mission is simple: to empower every developer with the infrastructure they need to succeed, no matter the scale or complexity of their vision.</p>
-    <p>Whether you're a startup looking to launch your first application or an established company aiming to optimize your existing infrastructure, Biber Cloud is your trusted partner in bringing your digital dreams to life.</p>
-    <h2>Low Costs, Simplicity, and Open Communication</h2>
+        <h2>Low Costs, Simplicity, and Open Communication</h2>
         <p>At Biber Cloud, we believe that hosting should be affordable and straightforward, without compromising on performance or reliability. Our infrastructure solutions are tailored to meet the exact needs of developers, ensuring a seamless integration with your projects.</p>
         <p>With a focus on simplicity and a network of top-tier infrastructure experts, we deliver systems that work effortlessly, allowing you to focus on what matters most: your code. We value open communication, ensuring that you always have a clear and direct line to the support you need.</p>
         <p>Join us at Biber Cloud, where simplicity meets excellence in infrastructure.</p>
-    
-        <!-- <a href="#" class="cta">Get Started with Biber Cloud</a> -->
-    <h3><b>#</b></b> <a href="https://join.slack.com/t/yourworkspace/shared_invite/xyz123">Join our Slack</a>
-    <h3>📧 <a href="mailto:contact@biber.solutions">contact@biber.solutions</a>
+
+        <h3><b>#</b></b> <a href="https://join.slack.com/t/yourworkspace/shared_invite/xyz123">Join our Slack</a>
+        <h3>📧 <a href="mailto:contact@biber.solutions">contact@biber.solutions</a>
         <h1>About Me and This Site</h1>
-    <p>I am in the restart phase of my business. After an exciting and successful time with a company where I was involved from day one, and where we scaled to 1,500 employees worldwide over 15 years, I want to return to my own company. This allows me to maintain direct contact with clients and work freely within my network. <a href="https://ch.linkedin.com/in/patrick-biber">Feel free to check my LinkedIn profile</a>, I am always open to exciting collaborations across industries and disciplines.</p>
-    <p>This website is hosted and managed directly on GitHub: <a href="https://github.com/patbiber/biber-cloud">Website Repository</a>. I have not installed any trackers or cookies beyond what GitHub provides, which is evident in the code. Here is the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. The content of this website is partially AI-generated.</p>
-    <div id="asciiBeaver"></div>
-    <!-- <img id="ufo" src="ufo.png" alt="UFO"> -->
-    
+        <p>I am in the restart phase of my business. After an exciting and successful time with a company where I was involved from day one, and where we scaled to 1,500 employees worldwide over 15 years, I want to return to my own company. This allows me to maintain direct contact with clients and work freely within my network. <a href="https://ch.linkedin.com/in/patrick-biber">Feel free to check my LinkedIn profile</a>, I am always open to exciting collaborations across industries and disciplines.</p>
+        <p>This website is hosted and managed directly on GitHub: <a href="https://github.com/patbiber/biber-cloud">Website Repository</a>. I have not installed any trackers or cookies beyond what GitHub provides, which is evident in the code. Here is the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. The content of this website is partially AI-generated.</p>
 
-    <script>
-        // JavaScript for beaver
-        const frames = [
-            `                   .---.\n                  @ @   )\n                  ^     |\n                 [|]    | ##\n                 /      |####\n                (       |####\n                 \| /   |#BP#\n                / |.'   |###\n               _\ \`\\   )##\n              /,,_/,,____#  `,
-            `                   .---.\n                  - -   )\n                  ^     |\n                 [|]    | ##\n                 /      |####\n                (       |####\n                 \| /   |#BP#\n                / |.'   |###\n               _\ \`\\   )##\n              /,,_/,,____#  `
-        ];
-
-        let currentFrame = 0;
-
-        setInterval(() => {
-            document.getElementById("asciiBeaver").innerText = frames[currentFrame];
-            currentFrame = (currentFrame + 1) % frames.length;
-        }, 500); // Change frame every 500ms for blinking effect
+        <div id="asciiBeaver"></div>
         
-        // JavaScript for UFO animation
-             window.addEventListener('load', () => {
-            const ufo = document.getElementById('ufo');
-            ufo.style.animation = 'ufoMove 10s linear infinite'; // Apply the animation
-        });
+        <script>
+            // JavaScript for beaver
+            const frames = [
+                `                   .---.\n                  @ @   )\n                  ^     |\n                 [|]    | ##\n                 /      |####\n                (       |####\n                 \| /   |#BP#\n                / |.'   |###\n               _\ \`\\   )##\n              /,,_/,,____#  `,
+                `                   .---.\n                  - -   )\n                  ^     |\n                 [|]    | ##\n                 /      |####\n                (       |####\n                 \| /   |#BP#\n                / |.'   |###\n               _\ \`\\   )##\n              /,,_/,,____#  `
+            ];
 
+            let currentFrame = 0;
 
-    </script>
-    
-    <footer><small> Network IT - Hermann Hiltbrunner-Weg 24 - CH-8713 Uerikon - UID: <a href="https://zh.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-114.307.161" target="_blank">CH-020.1.054.489-1</a> - MwSt: CHE-114.307.161   </small></footer>
-</div>
+            setInterval(() => {
+                document.getElementById("asciiBeaver").innerText = frames[currentFrame];
+                currentFrame = (currentFrame + 1) % frames.length;
+            }, 500); // Change frame every 500ms for blinking effect
+            
+            // JavaScript for UFO animation
+                window.addEventListener('load', () => {
+                const ufo = document.getElementById('ufo');
+                ufo.style.animation = 'ufoMove 10s linear infinite'; // Apply the animation
+            });
+
+        </script>
+        
+        <footer><small> Network IT - Hermann Hiltbrunner-Weg 24 - CH-8713 Uerikon - UID: <a href="https://zh.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-114.307.161" target="_blank">CH-020.1.054.489-1</a> - MwSt: CHE-114.307.161   </small></footer>
+    </div>
 </body>
 </html>
